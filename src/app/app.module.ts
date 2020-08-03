@@ -21,6 +21,8 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 import { SignupPageTwoComponent } from './signup-page-two/signup-page-two.component';
 import { SignupPageThreeComponent } from './signup-page-three/signup-page-three.component';
 import { DetailProfileComponent } from './detail-profile/detail-profile.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import { DetailProfileComponent } from './detail-profile/detail-profile.componen
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [],
   bootstrap: [AppComponent]
