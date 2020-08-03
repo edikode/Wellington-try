@@ -1,0 +1,84 @@
+$primary : #00ACC1;
+
+.banner {
+    width: 100%;
+    background-color: $primary;
+    height: 250px;
+    border-bottom-left-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    z-index: 1;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    .button-tab {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+
+        .mat-button {
+            font-size: 18px;
+            color: #80DEEA;
+            margin: 0 20px;
+
+            &.active {
+                color: #fff;
+            }
+        }
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px auto 40px auto;
+        background: #fff;
+        border-radius: 50px;
+        padding: 30px 30px;
+        box-sizing: border-box;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .mat-form-field {
+            width: 100%;
+
+            .mat-hint {
+                margin-top: 5px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .checkbox {
+            text-align: left;
+            margin-top: 16px;
+
+            .mat-checkbox {
+                color: $primary;
+                font-size: 16px;
+                margin-top: 10px;
+                letter-spacing: .1rem;
+            }
+        }
+
+
+    }
+
+    button.mat-raised-button {
+        margin: auto;
+        border-radius: 50rem !important;
+        width: 50%;
+        height: 60px;
+        font-size: 20px;
+    }
+}

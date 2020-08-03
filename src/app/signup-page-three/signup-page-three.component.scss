@@ -1,0 +1,11 @@
+@import '../signup-page/signup-page.component.scss';
+
+.content {
+    button.mat-raised-button {
+        margin: auto;
+        border-radius: 50rem !important;
+        width: 50%;
+        height: 60px;
+        font-size: 20px;
+    }
+}

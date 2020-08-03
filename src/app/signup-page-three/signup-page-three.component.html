@@ -1,0 +1,45 @@
+<div class="bg-secondary full-screen">
+  <div class="banner"></div>
+
+  <div class="content">
+    <div class="button-tab">
+      <button mat-button routerLink="/login">LOG IN</button>
+      <button mat-button class="active" routerLink="/signup">SIGN UP</button>
+    </div>
+
+    <div class="card mb-3">
+      <h1 class="text-center text-primary">Personal Information</h1>
+
+      <form action="" [style.fontSize.px]="18">
+        <mat-form-field appearance="legacy">
+          <mat-label>Organization</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+          <mat-label>Role in Organization</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+          <mat-label>Address</mat-label>
+          <input matInput />
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+          <mat-label>Address</mat-label>
+          <input matInput />
+        </mat-form-field>
+
+        <nav>
+          <ul>
+            <li routerLink="/signup"></li>
+            <li routerLink="/signup-two"></li>
+            <li routerLink="/signup-three" class="active"></li>
+          </ul>
+        </nav>
+      </form>
+    </div>
+
+    <button mat-raised-button color="primary" routerLink="/detail-profile">
+      CONTINUE
+    </button>
+  </div>
+</div>
